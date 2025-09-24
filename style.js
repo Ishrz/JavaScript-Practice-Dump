@@ -34,4 +34,24 @@
 // abc.style.color = "red"; 
 // abc.style.backgroundColor = "blue"
 
+// let abc =document.querySelector("#pp");
+// abc.textContent = "Welcome to VS code";
+
+// let lis= document.querySelectorAll("li");
+// lis.forEach( function(val){
+//     console.log(val.textContent);
+// })
+
+// let lis = document.querySelectorAll("li")
+// for(let i=0; i<lis.length; i++){
+//     console.log(lis[i].textContent);
+// }
+
+// let abc= document.querySelector("p");
+// abc.innerHTML= "<b>Updated</b> by Javascript"
+
+// let soc= document.querySelector("img")
+// console.log(soc.src);
+// let test=soc.getAttribute("src");
+// console.log("through variable " + test)
 
