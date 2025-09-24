@@ -55,3 +55,10 @@
 // let test=soc.getAttribute("src");
 // console.log("through variable " + test)
 
+// let linkk= document.querySelector("a");
+// linkk.setAttribute("href", "https://www.facebook.com")
+// or by this way 
+// linkk.href ="https://www.facebook.com";
+
+
+
