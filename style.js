@@ -11,10 +11,11 @@
 // hTag[0].innerHTML = "first H1 tag";
 // hTag[2].textContent = "3rd H1 tag";
 
+let attri = document.querySelector("a");
+// attri.setAttribute("href", "https://www.google.com");
 
+// console.log(attri.getAttribute("href"));
 
-
-
-
+// attri.removeAttribute("href");
 
 
