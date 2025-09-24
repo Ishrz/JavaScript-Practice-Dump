@@ -60,5 +60,14 @@
 // or by this way 
 // linkk.href ="https://www.facebook.com";
 
+// let tit = document.querySelector("p");
+// tit.setAttribute("title", "Kuch bhi");
+//or this way
+// tit.title = "hello";
+
+
+let btn= document.querySelector("button");
+btn.removeAttribute("disabled")
+
 
 
