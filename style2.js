@@ -19,13 +19,18 @@
 // })
 
 
-let slc = document.querySelector("select");
- let h2= document.querySelector("h2");
+// let slc = document.querySelector("select");
+//  let h2= document.querySelector("h2");
 
-slc.addEventListener("change", function(evt){
-h2.textContent= `${evt.target.value} is selected`;
+// slc.addEventListener("change", function(evt){
+// h2.textContent= `${evt.target.value} is selected`;
     
-})
+// })
+
+
+
+
+
 
 
 
