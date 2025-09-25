@@ -88,8 +88,8 @@
 // })
 
 
-let p =document.querySelectorAll("p");
-p.forEach( val =>{
-    val.style.fontSize = "20px";
-});
+// let p =document.querySelectorAll("p");
+// p.forEach( val =>{
+//     val.style.fontSize = "20px";
+// });
 
