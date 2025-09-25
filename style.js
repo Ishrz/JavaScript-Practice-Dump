@@ -82,7 +82,14 @@
 // let li = document.querySelector("li");
 // ul.removeChild(li);
 
-let ul = document.querySelectorAll("ul li:nth-child(2n)");
-ul.forEach(function(elem){
-    elem.classList.add("highlight");
-})
+// let ul = document.querySelectorAll("ul li:nth-child(2n)");
+// ul.forEach(function(elem){
+//     elem.classList.add("highlight");
+// })
+
+
+let p =document.querySelectorAll("p");
+p.forEach( val =>{
+    val.style.fontSize = "20px";
+});
+
