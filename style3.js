@@ -28,7 +28,7 @@
 // });
 
 let form = document.querySelector("form")
-let inputs =document.querySelectorAll("input");
+let inputs = document.querySelectorAll("input");
 let main = document.querySelector("#main");
 
 form.addEventListener("submit", function(evt){
@@ -41,16 +41,16 @@ form.addEventListener("submit", function(evt){
     profile.classList.add("profile");
 
     let img = document.createElement("img");
-    img.setAttribute("src", "https://images.unsplash.com/photo-1729106657786-ef318f75e365?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8");
-
+    // img.setAttribute("src", "https://images.unsplash.com/photo-1729106657786-ef318f75e365?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8");
+    img.setAttribute("src", inputs[0].value)
 
     let h3 = document.createElement("h3");
     let h5 = document.createElement("h5"); 
     let p = document.createElement("p");
 
-    h3.textContent = "John Doe";
-    h5.textContent = "Exceller"
-    p.textContent = "This is dummy profile of John Doe in which he do nothing for clients nothing and mostly do somthing for nothing and actully do anything for something : Exceller is a profile where profiler "
+    h3.textContent = inputs[1].value;
+    h5.textContent = inputs[2].value;
+    p.textContent = inputs[3].value;
 
 
 
@@ -62,6 +62,13 @@ form.addEventListener("submit", function(evt){
 
 
     main.appendChild(card);
+
+    inputs.forEach(function(inp){
+        if(inp.type !== "submit"){
+            inp.value = "";
+
+        }
+    })
 
     
 
