@@ -13,14 +13,53 @@
                 height: 100%;
             }
 
+            input{
+                display: block;
+            }
+
             #main{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                padding: 30px;
                 width: 100%;
                 height: 100%;
                 background-color: rgb(38, 29, 47);
+            }
+
+            .card{
+                max-width: 300px ;
+                color: white;
+                margin-top: 20px;
+                border-radius: 10px;
+                padding: 20px;
+                border: 1px solid #eeee;
+                display: inline-block;
+            }
+
+            .profile{
+                width: 50px;
+                height: 50px;
+                background-color: red;
+                border-radius: 50%;
+                margin-bottom: 8px;
+                overflow: hidden ;
+            
+            }
+
+            .profile img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                /* border-radius: 50%; */
+                
+            }
+
+            .card h5{
+                margin-top: 3px;
+            }
+
+            .card p{
+                font-size : 12px;
+                margin-top: 12px;
+
             }
 
             /* h1{
@@ -31,7 +70,7 @@
                 letter-spacing: -1rem;
             }  */
 
-            #ipt{
+            /* #ipt{
                 display : none;
             }
 
@@ -45,7 +84,7 @@
             #btn:hover{
                 background-color : rgb(53, 53, 150);
                 cursor : pointer;
-            }
+            } */
             
         </style>
 
@@ -56,10 +95,33 @@
     <div id="main">
         <!-- <h1> a </h1> -->
 
-        <input id="ipt" type="file">
-        <div id="btn">Upload Now</div>
-    </div>
+        <!-- <input id="ipt" type="file">
+        <div id="btn">Upload Now</div> -->
 
+        
+
+        
+            <form action="">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="age">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Profile pic">
+                <input type="submit">
+
+
+            </form>
+
+            <div class="card">
+                <div class="profile">
+                    <img src="https://images.unsplash.com/photo-1729106657786-ef318f75e365?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8" 
+                    alt="">
+                </div>
+                <h3>Shaikh</h3>
+                <h5>Coder</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quasi, odio praesentium at voluptas, veritatis officia, corporis amet provident minus magni distinctio voluptate.</p>
+            </div>
+    </div>
+   
 
 
     
