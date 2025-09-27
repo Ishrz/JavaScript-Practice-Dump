@@ -12,10 +12,17 @@
             body{
                 overflow: hidden;
                 position: relative;
+                padding: 30px;
+
             }
-            /* #m1{
+
+            .lt{
+                text-decoration: line-through;
+
+            }
+            /* #m1{ */
                 /* position: absolute; */
-                /* transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s; */
+                /* transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
                 justify-content: center;
                 width: 150px;
                 height: 100px;

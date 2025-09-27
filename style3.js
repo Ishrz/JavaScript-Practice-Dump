@@ -90,8 +90,9 @@
 // })
 
     
-
-
+document.querySelector("ul").addEventListener("click",(evt)=>{
+    evt.target.classList.toggle("lt");
+})
     
    
 
