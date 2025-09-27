@@ -9,13 +9,33 @@
                 height: 100%;
             }
 
-            #m1{
-                position: absolute;
-                transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+            body{
+                overflow: hidden;
+                position: relative;
+            }
+            /* #m1{
+                /* position: absolute; */
+                /* transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s; */
+                justify-content: center;
                 width: 150px;
                 height: 100px;
                 background-color: red;
-            }
+            } */
+
+            /* #b1{
+                position: absolute;
+                border-radius: 50%;
+                color: blue;
+                background-color: rgb(141, 130, 130);
+                padding: 10px;
+                border-color: blue;
+            } */
+
+            /* #parent{
+                position: relative;
+                
+                background-color: aqua;
+            } */
 
 
 

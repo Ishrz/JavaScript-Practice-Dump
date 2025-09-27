@@ -80,20 +80,17 @@
 //         mouse.style.backgroundColor ="red";
 //     })
 
-let m1 = document.querySelector("#m1");
-let mouseX= window.addEventListener("mousemove", function(evt){
+// let m1 = document.querySelector("#m1");
+// let mouseX= window.addEventListener("mousemove", function(evt){
 
-    m1.style.top = evt.clientY + "px";
-    m1.style.left = evt.clientX + "px";
+//     m1.style.top = evt.clientY + "px";
+//     m1.style.left = evt.clientX + "px";
+    
+    
+// })
+
     
 
-   
-    
-})
-
-    
-
- 
 
     
    
