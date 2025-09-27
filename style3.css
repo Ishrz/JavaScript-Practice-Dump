@@ -10,8 +10,9 @@
             }
 
             #m1{
-                width: 500px;
-                height: 400px;
+                position: absolute;
+                width: 150px;
+                height: 100px;
                 background-color: red;
             }
 
@@ -52,11 +53,11 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                /* border-radius: 50%; */
+                /* border-radius: 50%; 
                 
-            }
+            } */
 
-            .card h5{
+            /* .card h5{
                 margin-top: 3px;
             }
 
@@ -64,7 +65,7 @@
                 font-size : 12px;
                 margin-top: 12px;
 
-            } */
+            }  */
 
             /* h1{
                 color: rgba(14, 14, 146, 0.424);
