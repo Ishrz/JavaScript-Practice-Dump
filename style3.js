@@ -73,10 +73,10 @@
 
 
 let mouse = document.querySelector("#m1");
-    mouse.addEventListener("mouseover", function(){
+    mouse.addEventListener("mouseover", ()=>{
         mouse.style.backgroundColor = "yellow";
     })
-    mouse.addEventListener("mouseout", function(){
+    mouse.addEventListener("mouseout", ()=>{
         mouse.style.backgroundColor ="red";
     })
 
