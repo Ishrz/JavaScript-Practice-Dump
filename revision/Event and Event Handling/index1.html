@@ -15,41 +15,104 @@
             width: 100%;
             background-color: rgb(67, 67, 110);
         }
-        .p{ padding: 2rem;}
+        /* .p{ padding: 2rem;} */
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            height: 100%;
+            width: 100%;
+            
+        }
+        section{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 1rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 100;
+            color: rgb(3, 68, 68);
+            height: 100%;
+            width: 100%;
+            
+        }
+        .crouser{
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            flex-grow:1 ;
+
+        }
+        form{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        }
+
+        .card{
+            background-image: linear-gradient(rgb(85, 101, 250),rgb(235, 78, 78));
+            max-width: 300px;
+            
+            display: flex;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px;
+            align-items: center;
+            border-radius: 20px
+            
+        }
+        .profile{
+            height: 8rem;
+            width: 8rem;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+
+
+        /* #btn{
+            padding: 18px 25px;
+            background-color: rgb(177, 6, 6);color: black;
+            border-radius: 30px;
+        }
+        #btn:hover{ background-color: rgb(129, 2, 2); cursor: pointer;} */
+
     </style>
 </head>
 <body>
 
-<main style="text-align: center;">
+<main>
     <h1>First Line</h1> 
     
     <!-- style1 -->
-
     <!-- <section >
-
         <div style="padding-top: 3rem;">
             <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint vitae ratione veniam quos, expedita odit labore id itaque numquam accusantium?</p>
             <button style="padding: 0.65rem 1.5rem; border-radius: 50px;">Click Me</button>
         </div>
     </section> -->
-
     <!-- style1 -->
 
     <!-- style2 -->
-
     <!-- style2:input -->
-
     <!-- <section class="p">
         <input placeholder="Name" style="padding: 7px 7px;">
-
-
     </section> -->
-
     <!-- style2:input -->
 
     <!-- style3:change -->
-
-    <section class="p">
+    <!-- <section class="p">
         <h3 style="padding-bottom: 1rem;">Select your device</h3>
         <select >
             <option selected disabled>Choose Your Device</option>
@@ -59,10 +122,46 @@
             <option id="one">OnePlus</option>
             
         </select>
-    </section> 
-
+    </section>  -->
     <!-- style3:change -->
 
+    <!-- style4 : -->
+    <!-- <section>
+        A
+    </section> -->
+    <!-- style4 : -->
+
+    <!-- style5 -->
+    <!-- <section>
+        <input style="display: none;" id="inpt" type="file">
+        <div id="btn">
+            Upload File
+        </div>
+    </section> -->
+    <!-- style5 -->
+
+    <!-- style6 -->
+    <section>
+        <form>
+            <input type="text" placeholder="Profile Pic Addres">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Profession">
+            <input type="text" placeholder="Info">
+            <input type="submit" style="width: 50px;">
+        </form>
+        <div class="crouser">
+
+        </div>
+        <!-- <div class="card">
+            <div class="profile">
+                <img src="https://images.unsplash.com/photo-1761882738571-6cf4f77f9b65?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=387" alt="">
+            </div>
+            <h3>Name</h3>
+            <h5>Profession</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed ab eveniet mollitia enim facere? In.</p>
+        </div> -->
+    </section>
+    <!-- style6 -->
 
 
 </main>
@@ -74,7 +173,10 @@
 
 
 
-    <script src="style3.js"></script>
+    <script src="style6.js"></script>
+    <!-- <script src="style5.js"></script> -->
+    <!-- <script src="style4.js"></script> -->
+    <!-- <script src="style3.js"></script> -->
     <!-- <script src="style2.js"></script> -->
     <!-- <script src="style1.js"></script> -->
 </body>
