@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        *{padding: 0%;margin: 0%;box-sizing: border-box;}
+        html,body{height: 100%;width: 100%;background-color: rgb(0, 175, 53);}
+        .main{
+            width: 100%;
+            height: 100%;
+        }
+        .section{
+            padding: 5rem;
+        }
+        .hide{
+            display: none;
+            color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="section">
+            <form id="formid">
+                <input   id="name" type="text" placeholder="Name">
+                <div class="hide">
+                    <br>
+                    <small>*Please enter name more than 2 character</small>
+                </div>
+                <br><br>
+            
+                <input type="Email" placeholder="Email address">
+                <br>
+                <br>
+                <input type="Password" placeholder="Password">
+                <br>
+                <br>
+                <select>
+                    <option type="male">Male</option>
+                    <option type="male">Female</option>
+                    <option type="male">Others</option>
+                </select>
+                <br>
+                <br>
+                <input type="text" placeholder="write something about you">
+                <br><br>
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+
+
+
+
+<script src="style12.js"></script>    
+</body>
+</html>
