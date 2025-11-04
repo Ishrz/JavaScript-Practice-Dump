@@ -3,18 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>scopes-executionContext-Closurs</title>
+    <title>Static Toaster Notification</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        html{
-            background-color: black;
+        /* Setting a default font */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            min-height: 100vh;
         }
     </style>
 </head>
-<body>
+<body class="p-8">
+
+    <!-- 
+        Static Toaster Component 
+        - Fixed positioning (top-5, right-5) ensures it stays in the corner.
+        - No transition classes are used to keep it completely static (no animation).
     
+        -->
 
 
 
-<script src="script.js"></script>
+
+    <!-- <div id="toaster" class="fixed top-5 right-5 p-4 max-w-xs w-full bg-white rounded-xl shadow-xl border-l-4 border-emerald-500 mt-1 text-sm text-gray-600">
+                    Your changes have been securely saved and synchronized across all devices.
+    </div> -->
+
+
+
+            <!-- Close Button Section (Static, non-functional without JS) -->
+            <!-- <button class="flex-shrink-0 text-gray-400 p-1 rounded-full hover:bg-gray-100 transition-colors duration-150">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button> -->
+<script src="script2.js"></script>
 </body>
 </html>
