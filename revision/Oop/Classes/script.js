@@ -8,4 +8,9 @@ let coffee={
 console.log(coffee)
 
 let mocha= Object.create(coffee);
-console.log(mocha);
+
+mocha={
+    state:hot
+}
+
+console.log(mocha.drink());
