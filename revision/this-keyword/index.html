@@ -6,14 +6,72 @@
     <title>This-Keyword</title>
     <style>
         body{
-            background-color: gray;
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+        .form-container{
+            padding: 2rem;
+            width: 400px;
+            background-color: rgb(78, 76, 76);
+            border-radius: 30px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+        .card-container{
+            margin: 1rem;
+            width: 100%;
+            background-color: rgb(15, 15, 14);
+            display: flex;
+            gap: 1 rem;
+            border-radius: 30px;
+            align-items: center;
+            text-align: center;
+        }
+        .card{
+            margin: 1rem;
+            width: 250px;
+            background-color: rgb(75, 73, 71);
+            display: flex;
+            flex-direction: column;
+            border-radius: 30px;
+            align-items: center;
+            text-align: center;
+        }
+        img{
+           height: 100px;
+           width: 80px; 
+           object-fit: cover;
+           border-radius: 50%;
         }
     </style>
 </head>
 <body>
+<div class="form-container">
+    <form>
+        <input id="name" type="text" placeholder="name">
+        <input id="role" type="text" placeholder="Role">
+        <input id="bio" type="text" placeholder="Bio">
+        <input id="url" type="text" placeholder="Photo Url">
+        <input type="submit">
+    </form>
+</div>
 
-<h1>Hello</h1>
+<div class="card-container">
+    <!-- <div class="card1">
+        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=387">
+        <h3>name</h3>
+        <h6>Role</h6>
+        <p>biossdsdsd</p>
+        
+    </div> -->
+</div>
 
-<script src="script.js"></script>    
+
+
+<script src="script3.js"></script>    
 </body>
 </html>
