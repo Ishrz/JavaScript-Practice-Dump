@@ -1,22 +1,39 @@
-function CreatePencil(name,price,color,company){
-    this.name=name;
-    this.price=price;
-    this.color=color;
-    this.company=company;
-}
-
-CreatePencil.prototype.write= function(msg){
-        let h1=document.createElement("h1");
-        h1.style.color=this.color;
-        h1.textContent=msg;
-        document.body.append(h1);
-
+class CreatePencil{
+    constructor(name,company,price,color){
+        this.name=name;
+        this.company=company;
+        this.price=price;
+        this.color=color;
     }
 
-let pencil1=new CreatePencil("Natraj",20,"purple","Natraj");
-console.log(pencil1);
+    write(text){
+        let h1=document.createElement("h1");
+        h1.textContent=text;
+        h1.style.color=this.color;
+        document.body.appendChild(h1);
+    }
 
-let pencil2=new CreatePencil("Apsara",25,"red","Natraj");
-console.log(pencil2);
-console.log(pencil1.write("hello jiii"));
-console.log(pencil2.write("hello jiii from pencil 2"));
+    erase(){
+        let h1s=document.querySelectorAll("h1");
+
+        h1s.forEach((elem)=>{
+            if(elem.style.color === this.color){
+                // document.body.removeChild(elem);
+                elem.remove();
+            }
+        })
+        
+    }
+}
+
+let p1 = new CreatePencil("natraj","natraj",20,"red");
+console.log(p1);
+
+let p2 = new CreatePencil("natraj","natraj",20,"purple");
+
+p1.write("hello from pencil 1");
+p2.write("hello from pencil 2");
+p1.write("hello from pencil 1 text 2");
+p2.write("hello from pencil 2 text 2");
+
+p2.erase();
