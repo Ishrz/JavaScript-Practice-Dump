@@ -3,17 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fetch APi</title>
-    <style>
-        body{
-            background-color: rgb(0,10,8);
-        }
-    </style>
+    <title>Profile Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-700 flex items-center justify-center min-h-screen p-4">
 
-
-
-<script src="script.js"></script>    
+    <div class="card-container max-w-sm mx-auto bg-gray-600 rounded-xl shadow-lg overflow-hidden md:max-w-2xl flex gap-4 h-30 ">
+        <div class=" card md:flex flex-col bg-gray-800 max-h-fit">
+            <div class="md:shrink-0 ">
+                <img class="h-30 w-full object-cover md:h-full md:w-auto" src="https://images.unsplash.com/photo-1762368229295-81f2742fb8a5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=387" alt="Profile image">
+            </div>
+            <div class="p-8">
+                <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+                    **Jane Doe**
+                </div>
+                <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">
+                    Lead Software Engineer
+                </a>
+                
+                <p class="mt-2 text-gray-500">
+                    Dedicated and passionate software engineer with 5+ years of experience in full-stack web development. Focused on creating clean, efficient, and scalable code.
+                </p>
+            </div>
+        </div>
+    </div>
+<script src="script2.js"></script>
 </body>
 </html>
