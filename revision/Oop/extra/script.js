@@ -455,20 +455,47 @@
 // 	21.	Use call to execute showBrand for both objects.
 // 	22.	Explain what problem call is solving here.
 
-function showBrand(){
+// function showBrand(){
 
-    console.log(`${this.brand}`)
-}
+//     console.log(`${this.brand}`)
+// }
 
-let obj1={
-    brand:'Zara'
-}
+// let obj1={
+//     brand:'Zara'
+// }
 
-let obj2={
-    brand:'H&M'
-}
+// let obj2={
+//     brand:'H&M'
+// }
 
-showBrand.call(obj1)
-showBrand.call(obj2)
+// showBrand.call(obj1)
+// showBrand.call(obj2)
 
 //here call is solving our this value problem cause if we call just showbrand function this vlaue will be global object/window and we want our obj props value so we explicitly pass obj and it immeditaly called .
+
+
+
+
+// SECTION 7: apply Method Practice
+// 	23.	Create a function introduce that accepts two arguments: city and role, and prints name, city, and role using this.name.
+// 	24.	Create an object with a name property.
+// 	25.	Use apply to call introduce using the object and an array of arguments.
+// 	26.	Explain in simple words how apply differs from call.
+
+
+function Introduce(city,role){
+    this.city=city;
+    this.role=role;
+
+    console.log(`your name is ${this.name} and city : ${this.city} and role : ${this.role}`)
+}
+
+let obj={
+    name:"zoka"
+}
+let arr=["pune","vella"];
+
+Introduce.apply(obj,arr)
+Introduce.call(obj,...arr)
+
+//in apply we can pass an whole array and without destructing it can assign value in paramtrs 
