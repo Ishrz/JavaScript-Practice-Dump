@@ -393,15 +393,15 @@
 // 	14.	Modify the code so that this works correctly again.
 
 
-let profile={
-    username:"TestName",
-    printName:function(){
-        console.log(`username : ${this.username}`)
-    }
+// let profile={
+//     username:"TestName",
+//     printName:function(){
+//         console.log(`username : ${this.username}`)
+//     }
 
-}
+// }
 
-let profileMethodeVariable=profile.printName
+// let profileMethodeVariable=profile.printName
 
 //first way sol.
 // profileMethodeVariable.call(profile)
@@ -410,13 +410,41 @@ let profileMethodeVariable=profile.printName
 // profileMethodeVariable=profile.printName.call(profile)
 
 //third way
-profileMethodeVariable=profile.printName.bind(profile)
-profileMethodeVariable()
+// profileMethodeVariable=profile.printName.bind(profile)
+// profileMethodeVariable()
 
 // here when we aign the profile.printName to variable so only refrence of printName is assign to new variable not connect of profile thats why this loose its context and we get undefind thats why we 1st try to call that method whit .call method and in context provide our objext which we want to use as this and in second sol we do the same .call method execute imiditlyy and in third one we bind it with our context so anytime when we call that assign method we get context this which is out object profile.
 
 
 
+// SECTION 5: Constructor Function and Prototype
+// 	15.	Create a constructor function called Vehicle that accepts type and wheels.
+// 	16.	Add a method describe inside the constructor and observe memory behavior when multiple objects are created.
+// 	17.	Move the same method to Vehicle.prototype and repeat the test.
+// 	18.	Explain why the prototype approach is preferred.
+
+function Vehicle(type,wheels){
+    this.type=type;
+    this.wheels=wheels;
+
+    // this.describe=function(){
+    //     console.log(` the type is ${this.type} and wheels are ${this.wheels}`)
+    // }
+}
+
+Vehicle.prototype.describe=function(){
+    console.log(` the type is ${this.type} and wheels are ${this.wheels}`)
+}
+
+let v1=new Vehicle('Car',4)
+let v2=new Vehicle('truck',16)
+let v3=new Vehicle('tempo',3)
+
+console.log(v1)
+console.log(v2)
+console.log(v3)
+
+//due to prototype method every object have shared method of constructor function istead of there own copy of method which save memry
 
 
 
