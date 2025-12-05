@@ -483,19 +483,43 @@
 // 	26.	Explain in simple words how apply differs from call.
 
 
-function Introduce(city,role){
-    this.city=city;
-    this.role=role;
+// function Introduce(city,role){
+//     this.city=city;
+//     this.role=role;
 
-    console.log(`your name is ${this.name} and city : ${this.city} and role : ${this.role}`)
+//     console.log(`your name is ${this.name} and city : ${this.city} and role : ${this.role}`)
+// }
+
+// let obj={
+//     name:"zoka"
+// }
+// let arr=["pune","vella"];
+
+// Introduce.apply(obj,arr)
+// Introduce.call(obj,...arr)
+
+// //in apply we can pass an whole array and without destructing it can assign value in paramtrs 
+
+
+// SECTION 8: bind Method Practice
+// 	27.	Create a function greet that prints “Hello” followed by this.name.
+// 	28.	Bind this function to an object and store the returned function in a variable.
+// 	29.	Call the bound function later and observe the output.
+// 	30.	Explain why bind is useful when functions are executed later or inside callbacks.
+
+function greet(){
+    console.log(`Hello ${this.name}`)
 }
 
 let obj={
-    name:"zoka"
+    name:"poka"
 }
-let arr=["pune","vella"];
+let obj2={
+    name:"poki"
+}
 
-Introduce.apply(obj,arr)
-Introduce.call(obj,...arr)
+let Bound1=greet.bind(obj)
+let Bound2=greet.bind(obj2)
 
-//in apply we can pass an whole array and without destructing it can assign value in paramtrs 
+Bound1()
+Bound2()
