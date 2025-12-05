@@ -423,28 +423,52 @@
 // 	17.	Move the same method to Vehicle.prototype and repeat the test.
 // 	18.	Explain why the prototype approach is preferred.
 
-function Vehicle(type,wheels){
-    this.type=type;
-    this.wheels=wheels;
+// function Vehicle(type,wheels){
+//     this.type=type;
+//     this.wheels=wheels;
 
-    // this.describe=function(){
-    //     console.log(` the type is ${this.type} and wheels are ${this.wheels}`)
-    // }
-}
+//     // this.describe=function(){
+//     //     console.log(` the type is ${this.type} and wheels are ${this.wheels}`)
+//     // }
+// }
 
-Vehicle.prototype.describe=function(){
-    console.log(` the type is ${this.type} and wheels are ${this.wheels}`)
-}
+// Vehicle.prototype.describe=function(){
+//     console.log(` the type is ${this.type} and wheels are ${this.wheels}`)
+// }
 
-let v1=new Vehicle('Car',4)
-let v2=new Vehicle('truck',16)
-let v3=new Vehicle('tempo',3)
+// let v1=new Vehicle('Car',4)
+// let v2=new Vehicle('truck',16)
+// let v3=new Vehicle('tempo',3)
 
-console.log(v1)
-console.log(v2)
-console.log(v3)
+// console.log(v1)
+// console.log(v2)
+// console.log(v3)
 
 //due to prototype method every object have shared method of constructor function istead of there own copy of method which save memry
 
 
 
+
+// SECTION 6: call Method Practice
+// 	19.	Create a function showBrand that prints this.brand.
+// 	20.	Create two different objects with brand values.
+// 	21.	Use call to execute showBrand for both objects.
+// 	22.	Explain what problem call is solving here.
+
+function showBrand(){
+
+    console.log(`${this.brand}`)
+}
+
+let obj1={
+    brand:'Zara'
+}
+
+let obj2={
+    brand:'H&M'
+}
+
+showBrand.call(obj1)
+showBrand.call(obj2)
+
+//here call is solving our this value problem cause if we call just showbrand function this vlaue will be global object/window and we want our obj props value so we explicitly pass obj and it immeditaly called .
