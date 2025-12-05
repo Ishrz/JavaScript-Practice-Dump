@@ -395,8 +395,7 @@
 
 let profile={
     username:"TestName",
-    printName:function(parameter){
-        this.username=parameter
+    printName:function(){
         console.log(`username : ${this.username}`)
     }
 
@@ -404,6 +403,17 @@ let profile={
 
 let profileMethodeVariable=profile.printName
 
+//first way sol.
+// profileMethodeVariable.call(profile)
+
+// second way
+// profileMethodeVariable=profile.printName.call(profile)
+
+//third way
+profileMethodeVariable=profile.printName.bind(profile)
+profileMethodeVariable()
+
+// here when we aign the profile.printName to variable so only refrence of printName is assign to new variable not connect of profile thats why this loose its context and we get undefind thats why we 1st try to call that method whit .call method and in context provide our objext which we want to use as this and in second sol we do the same .call method execute imiditlyy and in third one we bind it with our context so anytime when we call that assign method we get context this which is out object profile.
 
 
 
