@@ -507,19 +507,96 @@
 // 	29.	Call the bound function later and observe the output.
 // 	30.	Explain why bind is useful when functions are executed later or inside callbacks.
 
-function greet(){
-    console.log(`Hello ${this.name}`)
+// function greet(){
+//     console.log(`Hello ${this.name}`)
+// }
+
+// let obj={
+//     name:"poka"
+// }
+// let obj2={
+//     name:"poki"
+// }
+
+// let Bound1=greet.bind(obj)
+// let Bound2=greet.bind(obj2)
+
+// Bound1()
+// Bound2()
+
+
+
+// //outer takes name in para via destructre
+// function outer({naam}){
+//     this.naam=naam
+
+//     //retrnd fnc
+//     return function inner(para){
+//         console.log(`frm this.naam(outer fnc data)-> ${this.naam} ; frm inner fnc Args:-> ${para}`)
+//     }
+// }
+
+// let obj={
+//     naam:"poka"
+// }
+// //outer called with object
+// let cb=outer(obj)
+
+// //inner called with args
+// cb('typed from below')
+// cb('again typed from below')
+
+// cb(69)
+
+// //2nd New object
+// let obj2={
+//     naam:"dusra object hai ye"
+// }
+// //pass it in argument but this pointing to old value of this.naam,[but argument jo pass kar rhe hai wo sahi le rha hai] 
+// cb(obj2.naam)
+
+// let cb2=outer(obj2)
+
+// cb2('from ')
+
+
+
+
+// let Bound1=greet.bind(obj)
+// let Bound2=greet.bind(obj2)
+
+// Bound1()
+// Bound2()
+
+
+function outer({naam}){
+    let data=naam
+
+    //retrnd fnc
+    return function inner(para){
+        console.log(`frm this.naam(outer fnc data)-> ${data} ; frm inner fnc Args:-> ${para}`)
+    }
 }
 
 let obj={
-    name:"poka"
+    naam:"poka"
 }
+let cb=outer(obj)
+
+//inner called with args
+cb('typed from below')
+cb('again typed from below')
+
+cb(69)
+
+//2nd New object
 let obj2={
-    name:"poki"
+    naam:"dusra object hai ye"
 }
+//pass it in argument but this pointing to old value of this.naam,[but argument jo pass kar rhe hai wo sahi le rha hai] 
+cb(obj2.naam)
 
-let Bound1=greet.bind(obj)
-let Bound2=greet.bind(obj2)
+let cb2=outer(obj2)
 
-Bound1()
-Bound2()
+cb2('2nd obj')
+
